@@ -1,14 +1,95 @@
-html {
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Bokor&display=swap");
+
+body {
+  font-family: Bokor;
+  font-size: 2rem;
+
+  /* background:url(https://img.freepik.com/free-photo/christmas-background-with-falling-snowflakes_1048-15055.jpg?ga=GA1.1.1755231260.1732962851&semt=ais_hybrid); */
+  background: url("../images/black-bauls.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: linear gradient(#0abab5, #4d4d4f); */
+  background-attachment: fixed;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+
+h1 {
+  /*   display:inline-block; */
+
+  font-size: 2rem;
+  text-align: center;
+  color: #141313;
+  background-color: #0abab5;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 0 auto;
 }
 img {
-  max-width: 100%;
+  display: inline-block;
+  height: 500px;
+  width: 500px;
+  border-radius: 5px;
+  padding: 4rem;
 }
-body {
+.ball {
+  display: inline-block;
+  padding: 8rem;
+  border-radius: 50%;
+  width: 500px;
+}
+.blueWreath {
+  display: inline-block;
+  padding: 8rem;
+  border-radius: 50%;
+  width: 500px;
+  animation: 3s linear slide-in, 3s ease-out 5s slide-out;
+}
+
+button {
+  font-family: Bokor;
+  text-align: center;
+  font-size: 35px;
+  color: #0abab5;
+  background-color: #111111;
+  padding: 8rem;
+  border-radius: 50%;
+  border-width: 8px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.tree {
+  display: inline-block;
+  padding: 8rem;
+  width: 500px;
+}
+/* #words {
+  font-family: Bokor;
+  display: inline-block;
+  width: 500px;
+  padding:8rem;
+} */
+/* the # is used for styling Id's */
+#mail-button {
+  padding: 1rem;
   background-color: green;
+  color: white;
+  font-family: bokor;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  border: 3px inset red;
+}
+
+.hidden {
+  display: none;
+}
+svg {
+  width: 30px;
+  color: red;
+}
+audio {
+  background-color: aqua;
+  border: 2rem inset black;
+}
+.wishes {
 }

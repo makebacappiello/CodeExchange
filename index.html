@@ -7,6 +7,82 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    Hello World
+    <h2 id="mail-button">
+      You've got mail
+      <svg viewBox="0 0 512 512" width="100" title="envelope" id="closed">
+        <path
+          d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+        /></svg
+      ><svg
+        viewBox="0 0 512 512"
+        width="100"
+        title="envelope-open"
+        class="hidden"
+        id="open"
+      >
+        <path
+          d="M512 464c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V200.724a48 48 0 0 1 18.387-37.776c24.913-19.529 45.501-35.365 164.2-121.511C199.412 29.17 232.797-.347 256 .003c23.198-.354 56.596 29.172 73.413 41.433 118.687 86.137 139.303 101.995 164.2 121.512A48 48 0 0 1 512 200.724V464zm-65.666-196.605c-2.563-3.728-7.7-4.595-11.339-1.907-22.845 16.873-55.462 40.705-105.582 77.079-16.825 12.266-50.21 41.781-73.413 41.43-23.211.344-56.559-29.143-73.413-41.43-50.114-36.37-82.734-60.204-105.582-77.079-3.639-2.688-8.776-1.821-11.339 1.907l-9.072 13.196a7.998 7.998 0 0 0 1.839 10.967c22.887 16.899 55.454 40.69 105.303 76.868 20.274 14.781 56.524 47.813 92.264 47.573 35.724.242 71.961-32.771 92.263-47.573 49.85-36.179 82.418-59.97 105.303-76.868a7.998 7.998 0 0 0 1.839-10.967l-9.071-13.196z"
+        />
+      </svg>
+    </h2>
+    <h1>Wishing Cassy a Very Happy Holidays!</h1>
+    <!-- <audio
+      controls
+      autoplay
+      muted
+      loop
+      src="Assets/Deck The Halls - The Soundlings.mp3"
+      Your
+      browser
+      does
+      not
+      support
+      the
+      audio
+      element.
+    >  -->
+    <figure>
+      <figcaption>Listen to Jingle Bells:</figcaption>
+      <audio
+        controls
+        autoplay
+        loop
+        src="Assets/Jingle Bells - The Soundlings.mp3"
+      ></audio>
+    </figure>
+
+    <!-- </audio> -->
+    <div class="row">
+      <div class="column">
+        <img
+          class="ball"
+          src="images/newRaidersBall.png"
+          alt="a raiders baul"
+        />
+        <img
+          class="tree"
+          src="images/gold-xmas-tree.png"
+          alt="a golden outline of a xmas tree"
+        />
+      </div>
+      <!--   got this tree from https://www.bing.com/images/search?view=detailV2&ccid=r46b4Z%2FA&id=260550385D22FD8F275133A2259B5E6BB9099F20&thid=OIP.r46b4Z_AAx0cd_aVnsw5TgHaKO&mediaurl=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F4-41701_gold-deco-christmas-tree-transparent-clip-art-image.png&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.af8e9be19fc0031d1c77f6959ecc394e%3Frik%3DIJ8JuWtemyWiMw%26pid%3DImgRaw%26r%3D0&exph=5865&expw=4248&q=Rita%27s+Christmas+tree+with+no+background&simid=608040097287917505&FORM=IRPRST&ck=F2138FA8576EC04AF8616D155EF07FEC&selectedIndex=27&itb=1&cw=567&ch=610&ajaxhist=0&ajaxserp=0 -->
+      <div class="column">
+        <br /><br /><br /><br />
+        <img
+          class="blueWreath"
+          src="images/blue-wreath.jpg"
+          alt="a christmas door wreath"
+        />
+        <button id="words" class="wishes">
+          I hope your holiday season is full of peace,<br />
+          joy and happiness.<br />
+          I wish your dreams become true. <br />
+          I wish for you a successfull bright and code-crushing future.<br />
+          Merry Christmas with lots of love.<br />
+          From : Makeba Cappiello.
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
