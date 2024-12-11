@@ -4,7 +4,6 @@ body {
   font-family: Bokor;
   font-size: 2rem;
 
-  /* background:url(https://img.freepik.com/free-photo/christmas-background-with-falling-snowflakes_1048-15055.jpg?ga=GA1.1.1755231260.1732962851&semt=ais_hybrid); */
   background: url("../images/black-bauls.avif");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,15 +12,23 @@ body {
 }
 
 h1 {
-  /*   display:inline-block; */
-
+  display: block;
+  width: 100px;
   font-size: 2rem;
   text-align: center;
-  color: #141313;
-  background-color: #0abab5;
-  border-radius: 10px;
-  padding: 8px;
+  color: #0abab5;
+  background-color: #141313;
+  border-radius: 50%;
+  padding: 5rem;
   margin: 0 auto;
+  border: 1.5rem ridge #b78933;
+}
+h1 hover {
+  cursor: pointer;
+  background-color: #0abab5;
+}
+h2 {
+  display: inline-block;
 }
 img {
   display: inline-block;
@@ -30,54 +37,136 @@ img {
   border-radius: 5px;
   padding: 4rem;
 }
-.ball {
-  display: inline-block;
-  padding: 8rem;
-  border-radius: 50%;
-  width: 500px;
-}
-.blueWreath {
-  display: inline-block;
-  padding: 8rem;
-  border-radius: 50%;
-  width: 500px;
-  animation: 3s linear slide-in, 3s ease-out 5s slide-out;
+.rotate {
+  /* width: 100px;
+  height: 100px; */
+
+  animation-name: rotate;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-button {
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ball {
+  display: block;
+  padding: 5rem;
+  border-radius: 50%;
+  width: 500px;
+  border: 1.5rem ridge #b78933;
+  background-color: #111111;
+
+  /* transform: translateX(54px) translateY(105px); */
+}
+.tree {
+  display: block;
+  padding: 8rem;
+  width: 500px;
+  height: 700px;
+}
+iframe {
+  display: block;
+  width: 300;
+  border-radius: 50%;
+  background-color: #111111;
+  border: 1.5rem ridge #b78933;
+}
+.blueWreath {
+  display: block;
+  padding: 2rem;
+  width: 500px;
+  margin: 8rem auto;
+  border-radius: 50%;
+  border: 1.5rem ridge #b78933;
+  background-color: #111111;
+}
+
+h3 {
+  display: inline-block;
+  padding: 8rem;
   font-family: Bokor;
   text-align: center;
   font-size: 35px;
   color: #0abab5;
   background-color: #111111;
   padding: 8rem;
+  border: 2.5rem ridge #b78933;
   border-radius: 50%;
   border-width: 8px;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  margin-top: 2rem;
+  /* display: block; */
+  /* animation: 3s ease-in 1s infinite reverse both running slidein; */
 }
-.tree {
-  display: inline-block;
-  padding: 8rem;
-  width: 500px;
+
+.slide-in {
+  /* animation: 3s ease-in 1s infinite reverse both running slidein; */
+  /* animation-name: my-animation;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+
+  /* animation: 4s linear 0s infinite alternate sun-rise; */
+
+  animation: 4s linear 0s infinite alternate rise,
+    7s linear 0s infinite alternate bounce;
 }
-/* #words {
-  font-family: Bokor;
-  display: inline-block;
-  width: 500px;
-  padding:8rem;
+@keyframes rise {
+  from {
+    transform: translateY(110vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateX(-50vw);
+  }
+  to {
+    transform: translateX(50vw);
+  }
+}
+
+/* @keyframes slide-in {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
 } */
+
 /* the # is used for styling Id's */
 #mail-button {
-  padding: 1rem;
-  background-color: green;
+  display: block;
+  padding: 2rem;
+  background-color: black;
   color: white;
   font-family: bokor;
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
-  border: 3px inset red;
+  border: 1.5rem ridge #b78933;
+  border-radius: 50%;
+  width: 100;
+  margin: 35%;
+}
+#mail-button:hover {
+  cursor: pointer;
+  background-color: #0abab5;
 }
 
 .hidden {
@@ -85,11 +174,35 @@ button {
 }
 svg {
   width: 30px;
-  color: red;
+  background-color: #b78933;
+  margin: 0rem auto;
 }
 audio {
-  background-color: aqua;
-  border: 2rem inset black;
+  display: block;
+  background-color: #111111;
+  border: 1.5rem ridge #b78933;
+  border-radius: 50%;
+  width: 150px;
+  /* border-image: initial; */
+  margin: 8px auto;
+  padding: 1.5rem;
 }
-.wishes {
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row img {
+  /* position: absolute; */
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
 }
